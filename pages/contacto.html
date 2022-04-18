@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="../img/favicom/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/750b319d71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header class=header>
+        <div class="header__logo">
+            <a href="../index.html" alt="home"><img src="../img/logo.jpg" alt="logo"></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__links" href="../index.html">HOME</a></li>
+                <li class="nav__item"><a class="nav__links" href="mi-historia.html">MI HISTORIA</a></li>
+                <li class="nav__item"><a class="nav__links" href="productos.html">PRODUCTOS</a></li>
+                <li class="nav__item"><a class="nav__links" href="foto-ideal.html">FOTO</a></li>
+                <li class="nav__item"><a class="nav__links" href="preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                <li class="nav__item"><a class="nav__links" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container__formulario">                               
+            <section class="containerFormulario__web">
+                <h1>Comunicate conmigo</h1>
+                <h2>Por la web</h2>
+                <form class="formulario" action="archivo.php" method="post" enctype="application/x-www-form-urlencoded">
+                 <fieldset>
+                        <legend>Tus datos</legend>
+                        <div>
+                            <label for="name">Nombre</label> 
+                            <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+                        </div>                    
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="mail" id="email" placeholder="email" required>
+                        </div> 
+                        <div>
+                            <label for="tel">Telefono (Opcional)</label>
+                            <input type="number" name="telefono" id="tel">
+                        </div>
+                        <div>
+                            <label for="pais">Pais de origen</label>
+                            <select name="pais" id="pais">
+                                <option value="" hiden selected>Elije tu pais</option>
+                                <option value="Ar">Argentina</option>
+                                <option value="Br">Brasil</option>
+                                <option value="Chi">Chile</option>
+                                <option value="Ur">Uruguay</option>
+                                <option value="Par">Paraguay</option>
+                                <option value="Per">Peru</option>
+                                <option value="EEUU">Estados Unidos</option>
+                                <option value="Mex">Mexico</option>
+                                <option value="Espa">España</option>
+                                <option value="Otr">Otro</option>
+                            </select>
+                        </div>                  
+                        <div>                      
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" required placeholder="Ingrese comentario"></textarea>
+                        </div>
+                        <div>
+                            <label for="notificar">Te interesa recibir novedades?</label>
+                            <input type="radio" name="notificaciones" id="notificar" value="si">Si
+                            <input type="radio" name="notificaciones" id="notificar" value="no">No
+                        </div>                   
+                        <div>
+                            <input type="submit" valor="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>                
+                    </fieldset>              
+                </form>
+            </section>
+        
+            <section class="containerFormulario__redes">
+                   <h2>Por redes sociales</h2>
+                   <ul class="formulario__iconos">
+                       <li><a href="https://wa.me/+5493513069268?text=Hola!%20Me%20gustaria%20saber%20mas%20sobre%20tus%20servicios.%20Muchas%20gracias" target="_blank"><i class="fa-brands fa-whatsapp whats"></i></a></li>
+                       <li><a href="https://www.instagram.com/retrato_fiel/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a></li>
+                   </ul>
+            </section>
+        </div>
+                
+    </main>    
+    <footer>
+       <p class="parrafo-footer">Copyright&copy; 2022 | All Rights Reserved | By Tey Pinto Gonzalo</p>
+    </footer>
+</body>
+</html>
