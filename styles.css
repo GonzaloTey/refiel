@@ -152,6 +152,7 @@ main {
     position: relative;
     animation-duration: 2s;
 }
+/* ++++++++++++++++++++++++++++++++ */
 /* Animacion */
 @keyframes desplazarse {
     0% {
@@ -274,13 +275,14 @@ main {
 /* ++++++++++++++++++++++++++++++++++++++++++*/
 /* main pagina productos*/  
 /*++++++++++++++++++++++++++++++++++++++++++ */ 
-
+/* Linear gradient en el fondo de productos */
 .container__productos {
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    background-color: rgb(163, 163, 145, 0.9);
+    background-color: rgba(163, 163, 145, 0.9);
+    background-image: linear-gradient(to bottom, rgba(163, 163, 145, 0.9), rgba(0, 0, 0, 0.678) );
 }
 
 .productos__retrato h3 {
