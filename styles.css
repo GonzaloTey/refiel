@@ -173,10 +173,14 @@ main {
 .about__enlace {
     border: 1px solid black;
     padding: 5px;
-    background-color: rgba(167, 167, 145, 0.788);
+    background-color: rgba(167, 167, 145, 0.123);
 }
+/* +++++++++++++++++ */
+/* Transform */
 .about__enlace:hover {
-    background-color: rgb(167, 167, 145);
+    background-color: rgb(136, 136, 119);
+    transform: scale(1.1) translateY(-16px);
+    transition: 1s;
 }
 .about__enlace a {
    display: block;
