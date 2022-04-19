@@ -264,12 +264,27 @@ main {
 .foto__historia {
     width: 100%;
     display: flex;
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    
+    
 }
+@keyframes movimiento {
+    0% {
+        transform: rotateY(0deg)
+    }
+    
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 .foto__historia img{
     margin: auto;
     width: 300px;
     height: 350px;
-    
 }
 /* ++++++++++++++++++++++++++++++++++++++++++*/
 /* Fin main pagina mi historia*/  
@@ -302,6 +317,10 @@ main {
     min-height: 250px;
     max-height: 300px;        
 }
+.productos__retrato ul li img:hover {
+    transform:scale(1.05);
+    transition-duration: .5s;       
+}
 .productos__cuadernos h3 {
     text-align: center;
 }
@@ -314,6 +333,10 @@ main {
     max-width: 300px;
     min-height: 250px;
     max-height: 300px;    
+}
+.productos__cuadernos ul li img:hover {
+    transform:scale(1.05);
+    transition-duration: .5s;    
 }
 
 @media only screen and (min-width: 620px) {
@@ -480,6 +503,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(163, 163, 145, 0.9);
+    background-image: linear-gradient(to bottom, rgba(163, 163, 145, 0.9), rgba(0, 0, 0, 0.4) );
 }
 .container__preguntas h1, h3, p {
     margin: 5px;
@@ -517,7 +542,8 @@ main {
 .container__formulario {
     display: flex;
     flex-direction: column;
-    background-color: rgb(177, 177, 144, 0.8);
+    background-color: rgba(163, 163, 145, 0.9);
+    background-image: linear-gradient(to bottom, rgba(163, 163, 145, 0.9), rgba(0, 0, 0, 0.678) );
 }
 fieldset div {
     margin: 7px;
